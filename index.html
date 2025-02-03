@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+    font-family: richmond;
+    src: url(richmond.ttf);
+}
+
+html, body {
+    background-color: black;
+    font-family: richmond sans-serif;
+}
+h1 {
+    color: white;
+    font-weight: normal;
+}
+.splash {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+}
+.splashonsplash {
+    width: 50%;
+    height: 50%;
+}
+.splashtext {
+    font-size: 100px;
+}
+  </style>
+  <script>
+
+  </script>
+</head>
+<body>
+    <div class="splashonsplash"></div>
+    <div class="splash">
+      <h1 id="text"></h1>
+</body>
+<script>
+let host = document.location.host
+let result = host.toUpperCase()
+document.title = result
+document.getElementById("text").innerHTML = result
+
+setTimeout("document.getElementById('text').innerHTML = 'SEE YOU SOON.'", 3000);
+</script>
+</html>
